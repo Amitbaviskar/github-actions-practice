@@ -3,8 +3,9 @@
 # the linter checks the code for syntax, formatting, and style issues.
 
 name: Auto Linter
-
 on:
+  workflow_dispatch:
+  
   push:
     paths:
       - "**/*.py"
