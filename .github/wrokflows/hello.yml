@@ -19,7 +19,7 @@ jobs:
   say-hello:
     runs-on: ubuntu-latest
     steps:
-      -name: Say hello to everyone
+      - name: Say hello to everyone
         run: echo "Hello Mitra"
 
 # Steps
