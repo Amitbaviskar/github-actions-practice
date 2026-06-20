@@ -1,8 +1,26 @@
 # Workflow
 # should have name
+# Workflow[No identetaion required for maping the workflow]
+name: Hello
 
+
+# on tells when the workflows should run (given indentation by tab)
+on:
+  workflow_dispatch:
+
+  
 # Jobs
-#should have a inside the workflow
+# should have a inside the workflow
+# jobs tells what the workflows should do, there can be one or n]more than one jobs hence he writes jobs
+# job is an object so need indentation
+
+jobs:
+  #1st job (give indentation)
+  say-hello:
+    runs-on: ubuntu-latest
+    steps:
+      -name: Say hello to everyone
+        run: echo "Hello Mitra"
 
 # Steps
 #should be inside the job
